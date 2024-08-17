@@ -72,7 +72,7 @@ document.getElementById("btnTinhTien").onclick = function () {
   let tienKmDauTien = giaKmDauTien(loaiXe);
   let tienKmTu1Den19 = giaKmTu1Den19(loaiXe);
   let tienKmTu19TroLen = giaKmTu19TroLen(loaiXe);
-  let tienTgCho = giaThoiGianCho(loaiXe);  
+  let tienTgCho = giaThoiGianCho(loaiXe);
   let tongTien = 0;
   if (soKm <= 19) {
     tongTien = 1 * tienKmDauTien + (soKm - 1) * tienKmTu1Den19;
@@ -92,38 +92,9 @@ document.getElementById("btnTinhTien").onclick = function () {
 };
 
 //Tạo một chức năng click cho nút in hoá đơn
-document.getElementById("btnInHoaDon").onclick = function () {
-  $("#myModal").modal("show");
-  document.querySelector(".modal-body").innerHTML = `
-  <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-  `;
-};
+// document.getElementById("btnInHoaDon").onclick = function () {
+//   $("#myModal").modal("show");
+//   document.querySelector(".modal-body").innerHTML = `
+
+//   `;
+// };
